@@ -10,7 +10,9 @@ var config_default = defineConfig({
   // Get this from tina.io
   build: {
     outputFolder: "admin",
-    publicFolder: "public"
+    publicFolder: "public",
+    basePath: "/dr.d"
+    // Required for GitHub Pages subdirectory deployment
   },
   media: {
     tina: {

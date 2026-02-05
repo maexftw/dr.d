@@ -36,31 +36,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Fix Tina Admin Paths
-        run: |
-          # Define a robust process shim in the head
-          # We use single quotes for the script content to avoid shell variable collision
-          SHIM="<script>window.global=window;window.process={env:{NODE_ENV:'production',NEXT_PUBLIC_TINA_CLIENT_ID:'${{ secrets.NEXT_PUBLIC_TINA_CLIENT_ID }}',TINA_TOKEN:'${{ secrets.TINA_TOKEN }}'},argv:[]};var process=window.process;</script>"
-          sed -i "s|<head>|<head>${SHIM}|g" dist/admin/index.html
-          
-          # Fix various paths in index.html for subdirectory
-          sed -i 's|/admin/assets/|/dr.d/admin/assets/|g' dist/admin/index.html
-          sed -i 's|href="/vite.svg"|href="/dr.d/vite.svg"|g' dist/admin/index.html
-          sed -i 's|/admin/index.html|/dr.d/admin/index.html|g' dist/admin/index.html
-          sed -i 's|src="/admin/|src="/dr.d/admin/|g' dist/admin/index.html
-          sed -i 's|href="/admin/|href="/dr.d/admin/|g' dist/admin/index.html
-
-      - name: Patch Tina JS Assets
-        run: |
-          # Redirect all process references in minified JS to our global shim
-          node -e "const fs = require('fs'); const path = require('path'); const dir = 'dist/admin/assets'; fs.readdirSync(dir).filter(f => f.endsWith('.js')).forEach(f => { const p = path.join(dir, f); let c = fs.readFileSync(p, 'utf8'); c = c.split('process.env').join('window.process.env'); c = c.split('process.argv').join('window.process.argv'); fs.writeFileSync(p, c); console.log('Patched ' + p); })"
-
-      - name: Debug Admin Index
-        run: |
-          cat dist/admin/index.html
-          # Log a snippet of the patched JS to see if the rewrite worked
-          node -e "const fs = require('fs'); const content = fs.readFileSync('dist/admin/assets/index-70a3a70b.js', 'utf8'); console.log('Snippet:', content.substring(7141200, 7141300))"
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

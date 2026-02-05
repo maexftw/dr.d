@@ -12,6 +12,7 @@ export default defineConfig({
     build: {
         outputFolder: "admin",
         publicFolder: "public",
+        basePath: "/dr.d", // Required for GitHub Pages subdirectory deployment
     },
     media: {
         tina: {
