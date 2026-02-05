@@ -56,7 +56,10 @@ jobs:
           node -e "const fs = require('fs'); const path = require('path'); const dir = 'dist/admin/assets'; fs.readdirSync(dir).filter(f => f.endsWith('.js')).forEach(f => { const p = path.join(dir, f); let c = fs.readFileSync(p, 'utf8'); c = c.split('process.env').join('window.process.env'); c = c.split('process.argv').join('window.process.argv'); fs.writeFileSync(p, c); console.log('Patched ' + p); })"
 
       - name: Debug Admin Index
-        run: cat dist/admin/index.html
+        run: |
+          cat dist/admin/index.html
+          # Log a snippet of the patched JS to see if the rewrite worked
+          node -e "const fs = require('fs'); const content = fs.readFileSync('dist/admin/assets/index-70a3a70b.js', 'utf8'); console.log('Snippet:', content.substring(7141200, 7141300))"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
