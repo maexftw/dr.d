@@ -47,7 +47,8 @@ jobs:
 
       - name: Patch Tina JS Assets
         run: |
-          find dist/admin/assets -name "*.js" -exec sed -i 's/process\.env/({"NODE_ENV":"production"})/g' {} +
+          find dist/admin/assets -name "*.js" -exec sed -i 's/process\.env\.NODE_ENV/"production"/g' {} +
+          find dist/admin/assets -name "*.js" -exec sed -i 's/process\.env/({NODE_ENV:"production"})/g' {} +
 
       - name: Debug Admin Index
         run: cat dist/admin/index.html
