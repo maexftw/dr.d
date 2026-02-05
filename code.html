@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menschliche Pflege | Dr. Elena Schmidt - Neurozentrierte Pflegeführung</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4a7c59","accent": "#d4a373","background-warm": "#fdfcf8",
+                        "text-main": "#2d3436",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body { 
+                @apply bg-background-warm text-text-main font-display antialiased; 
+            }
+            h1, h2, h3, .serif-italic { 
+                @apply font-serif; 
+            }
+        }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .warm-gradient {
+            background: linear-gradient(135deg, rgba(74, 124, 89, 0.05) 0%, rgba(212, 163, 115, 0.05) 100%);
+        }
+        .story-card {
+            @apply bg-white border border-accent/10 shadow-[0_4px_20px_-4px_rgba(74,124,89,0.1)] rounded-xl p-8 transition-all hover:shadow-lg;
+        }
+    </style>
+</head>
+<body class="transition-colors duration-300">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full bg-background-warm/90 backdrop-blur-md border-b border-accent/10">
+<div class="max-w-[1200px] mx-auto flex items-center justify-between px-6 py-5">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">favorite</span>
+</div>
+<div class="flex flex-col leading-tight">
+<h2 class="text-lg font-bold tracking-tight text-primary">Neuroscience Healthcare</h2>
+<span class="text-[10px] uppercase tracking-widest text-accent font-semibold">Human-Centric Nursing</span>
+</div>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<nav class="flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#narrative">Meine Geschichte</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#mission">Vision</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#approach">Der Weg</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#formats">Begleitung</a>
+</nav>
+<button class="bg-primary hover:bg-primary/90 text-white text-sm font-semibold h-11 px-7 rounded-full transition-all shadow-md">
+                    Gespräch vereinbaren
+                </button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="max-w-[1200px] mx-auto px-6 py-12 md:py-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 flex flex-col gap-8">
+<div class="inline-flex items-center gap-2 text-accent font-semibold tracking-wide uppercase text-xs">
+<span class="w-8 h-[1px] bg-accent"></span> Für Pflegedienstleitungen &amp; Teams
+                    </div>
+<h1 class="text-4xl md:text-6xl lg:text-7xl leading-[1.1] text-[#1a202c]">
+                        Pflege braucht <span class="italic text-primary">Herz</span> &amp; <span class="italic text-accent">Wissenschaft</span>.
+                    </h1>
+<p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl">
+                        Warum brennen wir aus, wenn wir eigentlich heilen wollen? Ich verbinde Neurobiologie mit echter Menschlichkeit, um Arbeitswelten zu schaffen, in denen Sie und Ihr Team wieder aufatmen können.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white text-base font-bold h-14 px-10 rounded-full transition-all shadow-lg flex items-center justify-center gap-2">
+                            Miteinander sprechen <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-transparent border border-accent/30 hover:border-accent text-accent font-bold h-14 px-8 rounded-full transition-all flex items-center justify-center">
+                            Das Konzept entdecken
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-[2rem] bg-cover bg-center shadow-2xl overflow-hidden" data-alt="Candid moment of two nurses laughing softly in a warm, sunlit hallway" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwhM73E5iXGJLvY7o4DpQrpZP17QFT6t0pzFLNUUJJD7MbR0VZqbx5yFddSbGt7ijwZKq09n9d3A_px1OyiSz7q2WZ1j6G78d9kf8x0VPO1Ybtg1Co7m4SSf0p4lDFIZLQJeb68GHQYKTixIRf6ii2uwisMGYaj4Ga98Q_B7xSbVujbskad16n3Bqf8SP1RmX82DTfDKA_RWc6qbfCikgVHC2uFU27gSLht7AEQYEvgtBoV-AXUL0DSOPcq7C80laK1oB10gfN4l8");'>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl max-w-[240px] hidden md:block border border-accent/10">
+<p class="text-sm italic text-gray-500 mb-2">"Gute Pflege beginnt bei der Pflege der Pflegenden."</p>
+<span class="text-xs font-bold text-primary">— Dr. Elena Schmidt</span>
+</div>
+</div>
+</div>
+</section>
+<section class="warm-gradient py-24" id="narrative">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-5/12 order-2 md:order-1">
+<div class="relative group">
+<div class="absolute -inset-4 bg-accent/20 rounded-2xl rotate-3 transition-transform group-hover:rotate-1"></div>
+<img alt="Elena Schmidt portrait" class="relative rounded-2xl shadow-xl grayscale-[20%] hover:grayscale-0 transition-all duration-700 w-full aspect-[3/4] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDawsLTy8r2uQ_PGo_AE7GoM5dFtOT6P0qICS_we9-2jpTAgqFKxe5_BbCUDss0dYj5HFEQnv_1KVpwframuKF_zz8J8T-2rjVDM6OSEsTYwcBhUHPP14D3v2JnsmhmmuqnCH9t4rD1KX6NtzweX5BZvfVc3KyVE0JpvOxF1AciPSwFEAiq2ahJ8BBEKGGG2uHvdKvfiOFsoBHk1VH-Jlik2NQVz3ohsRJES_Z0gmnwWmOm0zp91l2xj2fLaWpGlImDDqKmxy6eUX8"/>
+</div>
+</div>
+<div class="w-full md:w-7/12 order-1 md:order-2">
+<span class="text-accent font-bold tracking-widest uppercase text-xs mb-4 block">Die Geschichte hinter der Mission</span>
+<h2 class="text-3xl md:text-5xl font-bold mb-8 leading-tight">Von der Laborklinik zur <span class="italic font-normal">menschlichen Revolution</span>.</h2>
+<div class="space-y-6 text-gray-600 text-lg leading-relaxed">
+<p>
+                                Ich stand oft in sterilen Gängen und sah die Erschöpfung in den Augen von Pflegenden. Als Neurowissenschaftlerin verstand ich, was in ihren Gehirnen passierte – chronischer Stress, der die Empathie blockiert. Aber als Mensch fühlte ich den Schmerz über den Verlust der Würde im System.
+                            </p>
+<p>
+                                Meine Mission entstand aus dieser Lücke. Ich wollte nicht nur Daten liefern, sondern Brücken bauen. Brücken zwischen der harten Realität des Klinikalltags und dem tiefen Bedürfnis nach psychologischer Sicherheit und Wertschätzung.
+                            </p>
+<div class="pt-4">
+<p class="font-serif italic text-2xl text-primary">"Ich zeige Ihnen nicht nur, wie das Gehirn funktioniert – ich zeige Ihnen, wie wir gemeinsam wieder Mensch sein können."</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-[1200px] mx-auto px-6 py-24">
+<div class="text-center max-w-2xl mx-auto mb-20">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Wenn das System schwer wird...</h2>
+<p class="text-gray-500">Ich kenne die Knotenpunkte, die den Klinikalltag ersticken. Lassen Sie uns diese gemeinsam lösen.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="story-card">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">sentiment_dissatisfied</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Stille Erschöpfung</h3>
+<p class="text-gray-600 leading-relaxed text-sm">Wenn "Funktionieren" zur einzigen Priorität wird, stirbt die Freude am Beruf. Wir reaktivieren die neurobiologischen Grundlagen der Resilienz.</p>
+</div>
+<div class="story-card">
+<div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center text-accent mb-6">
+<span class="material-symbols-outlined">chat_bubble_outline</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Mauern in der Kommunikation</h3>
+<p class="text-gray-600 leading-relaxed text-sm">Missverständnisse zwischen Stationen oder Hierarchien. Ich schaffe Räume für echte Begegnung, basierend auf Vertrauen statt Angst.</p>
+</div>
+<div class="story-card">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">diversity_3</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Verlust der Bindung</h3>
+<p class="text-gray-600 leading-relaxed text-sm">Fachkräfte gehen nicht wegen der Arbeit, sondern wegen der Kultur. Wir bauen eine Umgebung, die Menschen hält, weil sie sich gesehen fühlen.</p>
+</div>
+</div>
+</section>
+<section class="bg-white py-24 border-y border-accent/5" id="mission">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="flex flex-col lg:flex-row gap-20 items-center">
+<div class="lg:w-1/2">
+<span class="text-accent font-bold tracking-widest uppercase text-xs mb-4 block">Transformation</span>
+<h2 class="text-3xl md:text-4xl font-bold mb-8 leading-tight">Wie wir die Kultur in Ihrer Klinik <span class="text-primary italic">neu beleben</span>.</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary shrink-0">spa</span>
+<div>
+<h4 class="font-bold mb-1">Innere Ruhe</h4>
+<p class="text-sm text-gray-500">Strategien, um auch im Chaos des Schichtdienstes bei sich zu bleiben.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary shrink-0">volunteer_activism</span>
+<div>
+<h4 class="font-bold mb-1">Empathische Führung</h4>
+<p class="text-sm text-gray-500">Leiten mit Klarheit und Herz, statt mit Druck und Kontrolle.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary shrink-0">groups_2</span>
+<div>
+<h4 class="font-bold mb-1">Echter Zusammenhalt</h4>
+<p class="text-sm text-gray-500">Ein Wir-Gefühl, das auch unter hoher Last nicht bricht.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary shrink-0">psychology_alt</span>
+<div>
+<h4 class="font-bold mb-1">Neuro-Growth</h4>
+<p class="text-sm text-gray-500">Fehler als Chance nutzen, um gemeinsam zu wachsen.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2">
+<div class="relative">
+<img alt="Team interacting positively" class="rounded-3xl shadow-lg brightness-90 saturate-[0.8]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwhM73E5iXGJLvY7o4DpQrpZP17QFT6t0pzFLNUUJJD7MbR0VZqbx5yFddSbGt7ijwZKq09n9d3A_px1OyiSz7q2WZ1j6G78d9kf8x0VPO1Ybtg1Co7m4SSf0p4lDFIZLQJeb68GHQYKTixIRf6ii2uwisMGYaj4Ga98Q_B7xSbVujbskad16n3Bqf8SP1RmX82DTfDKA_RWc6qbfCikgVHC2uFU27gSLht7AEQYEvgtBoV-AXUL0DSOPcq7C80laK1oB10gfN4l8"/>
+<div class="absolute inset-0 border-[20px] border-white/20 rounded-3xl pointer-events-none"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-[1200px] mx-auto px-6 py-24" id="formats">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-5xl font-bold mb-4">Gemeinsame Wege gehen</h2>
+<p class="text-gray-500 text-lg">Kein Standard-Coaching, sondern individuelle Begleitung für Ihren Klinikalltag.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<div class="bg-background-warm p-10 rounded-[2rem] border border-accent/20 flex flex-col items-start text-left hover:bg-white transition-all shadow-sm hover:shadow-md">
+<span class="text-xs font-bold text-accent uppercase tracking-widest mb-6">Für Stationen</span>
+<h3 class="text-2xl font-bold mb-4">Menschliche Team-Tage</h3>
+<p class="text-gray-600 mb-8 text-sm leading-relaxed">Wir nehmen uns Zeit für die Dynamik im Team. Vor Ort, praxisnah und mit sofort spürbarer Entlastung durch neurobiologische Tools.</p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 text-sm text-gray-700 font-medium"><span class="material-symbols-outlined text-primary">done</span> Stress-Mapping Station</li>
+<li class="flex items-center gap-3 text-sm text-gray-700 font-medium"><span class="material-symbols-outlined text-primary">done</span> Kommunikation im Fokus</li>
+<li class="flex items-center gap-3 text-sm text-gray-700 font-medium"><span class="material-symbols-outlined text-primary">done</span> Sofortige Umsetzung</li>
+</ul>
+<button class="mt-auto w-full py-4 rounded-full border border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all">Details anfragen</button>
+</div>
+<div class="bg-primary p-10 rounded-[2rem] text-white flex flex-col items-start text-left shadow-2xl scale-105 relative z-10">
+<div class="absolute -top-4 right-8 bg-accent text-white text-[10px] font-bold uppercase tracking-widest py-1.5 px-4 rounded-full">Beliebt</div>
+<span class="text-xs font-bold text-white/70 uppercase tracking-widest mb-6">Für Führungskräfte</span>
+<h3 class="text-2xl font-bold mb-4">Neuro-Leader Circle</h3>
+<p class="text-white/80 mb-8 text-sm leading-relaxed">Führen in der Pflege ist Hochleistungssport. Lernen Sie, wie Sie Ihr Gehirn und das Ihres Teams auf Resilienz und Kooperation programmieren.</p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 text-sm text-white/90"><span class="material-symbols-outlined">verified</span> Strategisches Coaching</li>
+<li class="flex items-center gap-3 text-sm text-white/90"><span class="material-symbols-outlined">verified</span> Burnout-Prävention</li>
+<li class="flex items-center gap-3 text-sm text-white/90"><span class="material-symbols-outlined">verified</span> Kulturwandel-Begleitung</li>
+</ul>
+<button class="mt-auto w-full py-4 rounded-full bg-white text-primary font-bold hover:bg-background-warm transition-all">Jetzt Platz sichern</button>
+</div>
+<div class="bg-background-warm p-10 rounded-[2rem] border border-accent/20 flex flex-col items-start text-left hover:bg-white transition-all shadow-sm hover:shadow-md">
+<span class="text-xs font-bold text-accent uppercase tracking-widest mb-6">Für Events</span>
+<h3 class="text-2xl font-bold mb-4">Wissens-Impulse</h3>
+<p class="text-gray-600 mb-8 text-sm leading-relaxed">Inspirierende Keynotes, die komplexe Hirnforschung lebendig und nahbar für alle Mitarbeitenden Ihrer Klinik übersetzen.</p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 text-sm text-gray-700 font-medium"><span class="material-symbols-outlined text-primary">done</span> Aha-Momente garantiert</li>
+<li class="flex items-center gap-3 text-sm text-gray-700 font-medium"><span class="material-symbols-outlined text-primary">done</span> Storytelling-Format</li>
+<li class="flex items-center gap-3 text-sm text-gray-700 font-medium"><span class="material-symbols-outlined text-primary">done</span> Aktuelle Forschung</li>
+</ul>
+<button class="mt-auto w-full py-4 rounded-full border border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all">Themen entdecken</button>
+</div>
+</div>
+</section>
+<section class="max-w-[1200px] mx-auto px-6 py-24">
+<div class="bg-accent/10 rounded-[3rem] p-12 md:p-24 text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-20 pointer-events-none">
+<svg class="w-full h-full" fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<circle class="text-primary" cx="50" cy="50" r="40" stroke="currentColor" stroke-width="0.5"></circle>
+<circle class="text-accent" cx="50" cy="50" r="30" stroke="currentColor" stroke-width="0.5"></circle>
+</svg>
+</div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">Gute Pflege ist kein Zufall, sondern das Ergebnis <span class="text-primary">menschlicher Arbeit</span>.</h2>
+<p class="text-lg text-gray-600 mb-12">Sind Sie bereit, den ersten Schritt in eine gesündere Zukunft für Ihr Team zu gehen? Ich freue mich auf Ihre Nachricht.</p>
+<div class="flex flex-col sm:flex-row gap-5 justify-center">
+<button class="bg-primary hover:bg-primary/90 text-white font-bold h-16 px-12 rounded-full shadow-xl transition-all">
+                            Kennenlerngespräch buchen
+                        </button>
+<button class="bg-white border border-accent/20 hover:border-accent text-accent font-bold h-16 px-10 rounded-full transition-all">
+                            Methodik-Guide (PDF)
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-white border-t border-accent/10 py-16">
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">favorite</span>
+<span class="font-bold text-xl tracking-tight">Neuroscience Healthcare</span>
+</div>
+<p class="max-w-xs text-sm text-gray-500 leading-relaxed">Begleitung für Kliniken und Pflegeteams. Wissenschaftlich fundiert, menschlich gelebt.</p>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-sm uppercase tracking-widest text-accent">Menü</h4>
+<a class="text-sm text-gray-600 hover:text-primary" href="#narrative">Über mich</a>
+<a class="text-sm text-gray-600 hover:text-primary" href="#mission">Vision</a>
+<a class="text-sm text-gray-600 hover:text-primary" href="#approach">Methodik</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-sm uppercase tracking-widest text-accent">Rechtliches</h4>
+<a class="text-sm text-gray-600 hover:text-primary" href="#">Impressum</a>
+<a class="text-sm text-gray-600 hover:text-primary" href="#">Datenschutz</a>
+<a class="text-sm text-gray-600 hover:text-primary" href="#">Kontakt</a>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-accent/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
+<p>© 2024 Dr. Elena Schmidt. Für eine Pflege mit Zukunft.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">LinkedIn</a>
+<a class="hover:text-primary" href="#">Instagram</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

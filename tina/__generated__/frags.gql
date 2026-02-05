@@ -1,0 +1,25 @@
+fragment PageParts on Page {
+  __typename
+  title
+  header {
+    __typename
+    title
+    subtitle
+  }
+  hero {
+    __typename
+    badge
+    headline
+    subheadline
+    image
+    ctaPrimary
+    ctaSecondary
+  }
+  mission {
+    __typename
+    badge
+    title
+    content
+    image
+  }
+}
