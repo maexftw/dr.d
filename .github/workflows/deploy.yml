@@ -47,7 +47,7 @@ jobs:
 
       - name: Patch Tina JS Assets
         run: |
-          node -e "const fs = require('fs'); const path = require('path'); const dir = 'dist/admin/assets'; fs.readdirSync(dir).filter(f => f.endsWith('.js')).forEach(f => { const p = path.join(dir, f); let c = fs.readFileSync(p, 'utf8'); c = c.split('process.env').join('({NODE_ENV:\"production\"})'); fs.writeFileSync(p, c); console.log('Patched ' + p); })"
+          node -e "const fs = require('fs'); const path = require('path'); const dir = 'dist/admin/assets'; fs.readdirSync(dir).filter(f => f.endsWith('.js')).forEach(f => { const p = path.join(dir, f); let c = fs.readFileSync(p, 'utf8'); const env = { NODE_ENV: 'production', NEXT_PUBLIC_TINA_CLIENT_ID: process.env.NEXT_PUBLIC_TINA_CLIENT_ID, TINA_TOKEN: process.env.TINA_TOKEN }; c = c.split('process.env').join(JSON.stringify(env)); fs.writeFileSync(p, c); console.log('Patched ' + p); })"
 
       - name: Debug Admin Index
         run: cat dist/admin/index.html
