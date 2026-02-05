@@ -38,6 +38,7 @@ jobs:
 
       - name: Fix Tina Admin Paths
         run: |
+          sed -i 's|<head>|<head><script>window.process = { env: { NODE_ENV: "production" } };</script>|g' dist/admin/index.html
           sed -i 's|/admin/assets/|/dr.d/admin/assets/|g' dist/admin/index.html
           sed -i 's|/admin/index.html|/dr.d/admin/index.html|g' dist/admin/index.html
           sed -i 's|src="/admin/|src="/dr.d/admin/|g' dist/admin/index.html
