@@ -45,6 +45,10 @@ jobs:
           sed -i 's|src="/admin/|src="/dr.d/admin/|g' dist/admin/index.html
           sed -i 's|href="/admin/|href="/dr.d/admin/|g' dist/admin/index.html
 
+      - name: Patch Tina JS Assets
+        run: |
+          find dist/admin/assets -name "*.js" -exec sed -i 's/process\.env/({"NODE_ENV":"production"})/g' {} +
+
       - name: Debug Admin Index
         run: cat dist/admin/index.html
 
